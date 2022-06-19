@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2020",
+    "composite": true,
+    "module": "ESNext",
+    "lib": ["DOM", "esnext", "ES2015", "ES2016", "ES2017", "ES2018", "ES2019"],
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "preserve",
+    "declaration": true,
+    "reactNamespace": "React",
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "typings",
+    "rootDir": ".",
+    "tsBuildInfoFile": "./tsBuildInfoFile.json",
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "baseUrl": "./node_modules",
+    "importHelpers": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": false,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "allowUnusedLabels": false,
+    "paths": {
+      "*": ["./*", "./@types/*"]
+    },
+    "types": ["node", "react"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "traceResolution": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true
+  },
+  "typeAcquisition": {
+    "enable": false
+  },
+  "exclude": ["node_modules"],
+  "include": ["src", "type"]
+}

@@ -26,7 +26,7 @@ const NewExpense = (props) => {
           hideAdd={hideAdd}
         />
       ) : (
-        <button onClick={showAdd}>Add NewExpense</button>
+        <button onClick={showAdd}>Add New Expense</button>
       )}
     </div>
   );

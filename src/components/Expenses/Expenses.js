@@ -19,11 +19,13 @@ const Expenses = (props) => {
 
   return (
     <div>
+      
       <Card className='expenses'>
         <ExpensesFilter
           setYear={yearSelected}
           onSelectYear={getYear}
           total={listTotal}
+          
         />
         <li>
           <ExpensesList

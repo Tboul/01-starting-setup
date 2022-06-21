@@ -31,8 +31,9 @@ const ExpenseForm = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className='new-expense__controls'>
+      
         <div className='new-expense__control'>
+          <button>Add Expense</button>
           <label>Title</label>
           <input
             type='text'
@@ -59,7 +60,7 @@ const ExpenseForm = (props) => {
             value={enteredDate}
             onChange={handleDateInput}
           />
-        </div>
+       
       </div>
       <div className='new-expense__actions'>
         <button type='submit'>Add Expense</button>

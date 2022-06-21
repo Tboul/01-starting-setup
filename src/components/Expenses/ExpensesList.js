@@ -1,14 +1,10 @@
-import React from 'react'
-import ExpenseItem from './ExpenseItem'
-import './ExpensesList.css'
+import React from "react";
+import ExpenseItem from "./ExpenseItem";
+import "./ExpensesList.css";
 
 const ExpensesList = (props) => {
   if (props.listTotal === 0) {
-    return (
-      <h2 className='expenses-list__fallback'>
-        No Items Found.
-      </h2>
-    )
+    return <h2 className='expenses-list__fallback'>No Items Found</h2>;
   }
   return (
     <ul className='expenses-list'>
@@ -21,7 +17,7 @@ const ExpensesList = (props) => {
         />
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default ExpensesList
+export default ExpensesList;
